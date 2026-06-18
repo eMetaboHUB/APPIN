@@ -14,7 +14,7 @@
   <a href="#-supported-spectrum-types"><img src="https://img.shields.io/badge/NMR-2D%20Analysis-green" alt="NMR 2D"/></a>
   <a href="https://www.metabohub.fr/"><img src="https://img.shields.io/badge/MetaboHub-blue" alt=" MTH "/></a>
   <a href="LICENSE.txt"><img src="https://img.shields.io/badge/License-CeCILL--2.1-yellow" alt="License CeCILL-2.1"/></a>
-  <a href="https://forge.inrae.fr/smq-metatoul/axiom/-/pipelines"><img src="https://forge.inrae.fr/smq-metatoul/axiom/badges/master/pipeline.svg" alt="Pipeline Status"/></a></p>
+  <a href="https://forge.inrae.fr/smq-metatoul/axiom/-/pipelines"><img src="https://forge.inrae.fr/smq-metatoul/axiom/badges/main/pipeline.svg" alt="Pipeline Status"/></a></p>
 
 <p align="center">
   <a href="#-quick-start">Quick Start</a> •
