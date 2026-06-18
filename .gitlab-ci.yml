@@ -2,7 +2,6 @@
 # APPIN - GitLab CI/CD
 # Transposition du workflow GitHub Actions "R Tests" vers GitLab CI.
 # ============================================================================
-
 stages:
   - test
 
@@ -22,14 +21,12 @@ R-tests:
   # rocker/r-ver:4.2.2 = R fixe ; "release" via setup-r n'existe pas hors Actions,
   # donc on epingle une version concrete proche de ton environnement.
   image: rocker/r-ver:4.2.2
-
-  # Equivaut au "on: push/pull_request sur main" + workflow_dispatch.
+  # Equivaut au "on: push/pull_request sur main/master" + workflow_dispatch.
   # workflow_dispatch -> lancement manuel via le bouton "Run pipeline".
-rules:
-  - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH =~ /^(main|master)$/'
-  - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^(main|master)$/'
-  - if: '$CI_PIPELINE_SOURCE == "web"'
-
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH =~ /^(main|master)$/'
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME =~ /^(main|master)$/'
+    - if: '$CI_PIPELINE_SOURCE == "web"'
   before_script:
     # Dependances systeme (identiques au workflow GitHub).
     - apt-get update
@@ -50,7 +47,6 @@ rules:
       "DT","plotly","ggplot2","viridis","data.table","dplyr","purrr",
       "magrittr","readr","reshape2","dbscan","zoo","abind","matrixStats",
       "minpack.lm","imager","sp","digest","Rcpp","MASS"))'
-
   script:
     # Le code testable est dans APPIN/APPIN_1.0.0/ (APPIN_1.0.0 est un
     # sous-dossier de APPIN, a la racine du depot a cote de MetCAP-R/).
