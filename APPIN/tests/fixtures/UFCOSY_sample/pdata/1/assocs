@@ -1,0 +1,11 @@
+##TITLE= Parameter file, TopSpin 3.6.4
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 5	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2024-06-21 09:46:35.097 +0200  nmrsu@TLS-TOX-E20RMN
+$$ D:/nmrdata/data/nmrsu/nmr/230601884_liver_apolar/4/pdata/1/assocs
+$$ process C:\Bruker\TopSpin3.6.4\prog\mod\dataserver.exe
+##$MULTDISP= <D:/nmrdata/data/nmrsu/nmr/230601884_liver_apolar/2/pdata/1|D:/nmrdata/data/nmrsu/nmr/230601884_liver_apolar/1/pdata/1>
+##END=

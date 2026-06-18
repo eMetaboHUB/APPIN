@@ -1,0 +1,293 @@
+/* =============================================================================
+   2D NMR Analyst - Main Stylesheet
+   Author: Julien Guibert
+   ============================================================================= */
+
+/* -----------------------------------------------------------------------------
+   General Styles
+   ----------------------------------------------------------------------------- */
+body, label, input, button, select, .form-control {
+  font-size: 13px !important;
+}
+
+/* Full-width interactive plot */
+#interactivePlot {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Accordion Panel Styles
+   ----------------------------------------------------------------------------- */
+.panel-group {
+  margin-bottom: 0 !important;
+}
+
+.panel-group .panel {
+  border-radius: 8px !important;
+  margin-bottom: 8px !important;
+  border: none !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  overflow: hidden;
+}
+
+.panel-group .panel-heading {
+  border-radius: 0 !important;
+  padding: 12px 15px !important;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.panel-group .panel-heading:hover {
+  filter: brightness(95%);
+}
+
+.panel-group .panel-title {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+.panel-group .panel-title a {
+  color: white !important;
+  text-decoration: none !important;
+  display: block;
+}
+
+.panel-group .panel-title a:hover,
+.panel-group .panel-title a:focus {
+  text-decoration: none !important;
+}
+
+.panel-group .panel-body {
+  padding: 15px !important;
+  background-color: #fafafa !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Section Color Gradients (Accordion Headers)
+   ----------------------------------------------------------------------------- */
+/* Section 1: Load Data - Green */
+.panel-group .panel:nth-child(1) .panel-heading {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
+  border: none !important;
+}
+
+/* Section 2: Plot Settings - Purple */
+.panel-group .panel:nth-child(2) .panel-heading {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+}
+
+/* Section 3: Peak Picking - Pink */
+.panel-group .panel:nth-child(3) .panel-heading {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+  border: none !important;
+}
+
+/* Section 4: Manual Editing - Cyan */
+.panel-group .panel:nth-child(4) .panel-heading {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+  border: none !important;
+}
+
+/* Section 5: Integration - Orange/Yellow */
+.panel-group .panel:nth-child(5) .panel-heading {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+  border: none !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Info & Warning Boxes
+   ----------------------------------------------------------------------------- */
+.info-box-custom {
+  background-color: #e7f3ff;
+  border-left: 4px solid #007bff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.warning-box {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+/* -----------------------------------------------------------------------------
+   Click Coordinates Display
+   ----------------------------------------------------------------------------- */
+.click-coords {
+  background-color: #e9ecef;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: monospace;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+/* -----------------------------------------------------------------------------
+   Data Tables
+   ----------------------------------------------------------------------------- */
+.dataTables_wrapper {
+  overflow-x: auto;
+  font-size: 12px;
+}
+
+/* -----------------------------------------------------------------------------
+   Scrollable Spectra List
+   ----------------------------------------------------------------------------- */
+.spectra-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* -----------------------------------------------------------------------------
+   Details/Summary Collapsible Sections
+   ----------------------------------------------------------------------------- */
+details {
+  margin: 10px 0;
+}
+
+details summary {
+  padding: 8px 10px;
+  background: #e9ecef;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  color: #495057;
+}
+
+details summary:hover {
+  background: #dee2e6;
+}
+
+details[open] summary {
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 0;
+  background: #007bff;
+  color: white;
+}
+
+details > div {
+  border: 1px solid #dee2e6;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  padding: 10px;
+  background: #f8f9fa;
+}
+
+/* -----------------------------------------------------------------------------
+   Compact Buttons
+   ----------------------------------------------------------------------------- */
+.btn-xs {
+  padding: 2px 8px;
+  font-size: 11px;
+}
+
+/* -----------------------------------------------------------------------------
+   Move Buttons Grid (Box Editing)
+   ----------------------------------------------------------------------------- */
+.move-btn-grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 28px);
+  grid-template-rows: repeat(3, 26px);
+  gap: 1px;
+  justify-items: center;
+  align-items: center;
+}
+
+.move-btn-grid .btn {
+  width: 26px !important;
+  height: 24px !important;
+  padding: 0 !important;
+  font-size: 12px !important;
+  line-height: 24px !important;
+}
+
+/* Shrink/Expand buttons */
+.move-btn-grid .btn-warning,
+.move-btn-grid .btn-success {
+  width: 12px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Overflow Fixes
+   ----------------------------------------------------------------------------- */
+.panel-body {
+  overflow: visible !important;
+}
+
+.bsCollapsePanel .panel-body {
+  overflow: visible !important;
+}
+
+/* Fix sidebar overflow */
+.main-sidebar, .sidebar, .sidebar-menu {
+  overflow: visible !important;
+}
+
+.content-wrapper, .main-content {
+  overflow: visible !important;
+}
+
+/* Fix for Peak Picking buttons being cut off */
+.panel-group .panel:nth-child(3) .panel-body {
+  overflow: visible !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Peak Picking Buttons
+   ----------------------------------------------------------------------------- */
+.btn-peak-picking {
+  font-size: 11px !important;
+  padding: 5px 8px !important;
+  white-space: nowrap !important;
+}
+
+/* -----------------------------------------------------------------------------
+   Form Controls - Compact Styling
+   ----------------------------------------------------------------------------- */
+/* Fix for Step input being cut off */
+#move_box_step {
+  width: 100% !important;
+}
+
+/* More compact labels */
+.form-group label {
+  margin-bottom: 2px !important;
+  font-size: 12px !important;
+}
+
+/* More compact NumericInput in Edit box */
+.edit-box-inputs .form-group {
+  margin-bottom: 5px !important;
+}
+
+.edit-box-inputs input[type='number'] {
+  padding: 4px 6px !important;
+  font-size: 12px !important;
+}
+
+/* Compact step input */
+.step-input-compact .form-group {
+  margin-bottom: 0 !important;
+}
+
+.step-input-compact label {
+  font-size: 11px !important;
+}
+
+.step-input-compact input {
+  font-size: 11px !important;
+  padding: 3px 5px !important;
+  height: 28px !important;
+}

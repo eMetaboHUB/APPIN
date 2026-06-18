@@ -1,0 +1,24 @@
+##TITLE= Parameter file, TopSpin 3.6.4
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 10	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2024-03-22 18:43:33.365 +0100  nmrsu@TLS-TOX-E20RMN
+$$ D:/nmrdata/data/nmrsu/nmr/230601884_liver_apolar/4/acqu2s
+$$ process C:\Bruker\TopSpin3.6.4\prog\mod\go4.exe
+##$ACQT0= 0
+##$BF1= 600.13
+##$FnILOOP= 0
+##$FnMODE= 1
+##$NUC1= <1H>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 8
+##$O1= 2865.30000005314
+##$ProjAngle= 0
+##$SFO1= 600.1328653
+##$SW= 10.0138081616497
+##$SW_h= 6009.61538461538
+##$TD= 8
+##END=

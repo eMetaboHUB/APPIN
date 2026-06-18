@@ -1,0 +1,223 @@
+# 1 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+;ufcosy interleaved
+;avance-version (02/05/31)
+;1D sequence
+;modified by Meerakhan on 15/03/13
+;spatially selective acquisition using adiabatic pulse and field gradients
+;acquisition including gradient switching
+;cf. Frydman, Lupulescu and Scherf, J. Am. Chem. Soc. 2003, 125, 9204-9217
+
+
+;$CLASS=HighRes
+;$DIM=2D
+;$TYPE=
+;$SUBTYPE=
+;$COMMENT=
+# 1 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/Avance.incl" 1
+;Avance3.incl
+;   for AV III
+;
+;avance-version (13/06/17)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+
+# 169 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/Avance.incl"
+;$Id: Avance3.incl,v 1.10.2.2 2013/08/30 09:43:33 ber Exp $
+# 18 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr" 2
+
+# 1 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/Grad.incl" 1
+;Grad2.incl  -  include file for Gradient Spectroscopy
+;   for TCU3
+;
+;avance-version (07/01/17)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+# 27 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/Grad.incl"
+define list<gradient> EA=<EA>
+
+
+# 31 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/Grad.incl"
+;$Id: Grad2.incl,v 1.14 2012/01/31 17:49:21 ber Exp $
+# 19 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr" 2
+
+# 1 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/De.incl" 1
+;De2.incl
+;   for AVi
+;
+;avance-version (08/02/15)
+;
+;$CLASS=HighRes Incl
+;$COMMENT=
+
+# 10 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/De.incl"
+define delay rde1
+
+
+"rde1=de-de1"
+# 24 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/De.incl"
+;for multi receive
+
+
+# 33 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/De.incl"
+;$Id: De2.incl,v 1.8 2012/01/31 17:49:21 ber Exp $
+# 20 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr" 2
+
+
+"d2=3u"
+# 24 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+"p15=(td*dw/(2*l3))-d6"
+"in2=2*(p15+d6)/td1"
+"d25=p15"
+
+# 1 "mc_line 28 file C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr exp. def. part of mc cmd. before ze"
+; dimension 2D; AQ_mode  (F1) QF
+define delay MCWRK
+define delay MCREST
+"MCREST = 30m - 30m"
+"MCWRK = 0.500000*30m"
+
+    dccorr
+# 28 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+1 ze
+# 1 "mc_line 28 file C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr exp. def. of mc cmd. after ze"
+LBLAV, MCWRK
+# 29 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+  20u st0
+
+21 30m pl1:f1 pl9:f2
+  1u reset:f1
+  d1 cw:f2 ph29
+  4u do:f2
+  100u setnmr3|0 setnmr0|34|32|33 ctrlgrad 0
+  p1 ph1
+  10u gron0
+  p11:sp1:f1 ph2
+  10u groff
+  10u
+	p20:gp20
+  10u
+  10u gron1
+  p11:sp1:f1 ph2
+  10u groff
+  10u
+	p21:gp21
+  10u
+  10u pl1:f1
+  d24 gron24
+  10u groff
+  10u
+  p23:gp23
+  10u
+  p1 ph1
+  10u
+  p26:gp26
+  10u
+  d25 gron25
+  10u groff
+  10u
+  d2
+  6.5u
+# 65 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+31 p15:gp15
+	d6
+	p15:gp16
+	d6
+  lo to 31 times l3
+  100u setnmr3^0 setnmr0^34^32^33 ctrlgrad 7
+  3m
+  100u setnmr3|0 setnmr0|34|32|33 ctrlgrad 0
+  p10:gp10
+  100u setnmr3^0 setnmr0^34^32^33 ctrlgrad 7
+  30m 
+  lo to 21 times l4
+
+# 1 "mc_line 78 file C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr exp. start label for mc cmd."
+2 MCWRK 
+LBLF1, MCWRK pl1:f1 pl9:f2
+  MCREST
+# 79 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+  1u reset:f1
+  d1 cw:f2 ph29
+  4u do:f2
+  100u setnmr3|0 setnmr0|34|32|33 ctrlgrad 0
+  p1 ph1
+  10u gron0
+  p11:sp1:f1 ph2
+  10u groff
+  10u
+	p20:gp20
+  10u
+  10u gron1
+  p11:sp1:f1 ph2
+  10u groff
+  10u
+	p21:gp21
+  10u
+  10u pl1:f1
+  d24 gron24
+  10u groff
+  10u
+  p23:gp23
+  10u
+  p1 ph1
+  10u
+  p26:gp26
+  10u
+  d25 gron25
+  10u groff
+  10u
+  d2
+  (rde1 sync de1 adc ph31 syrec) (1u 1u ph30:r):f1 (de)
+  1u cpdngs17:f1
+
+3 p15:gp15
+	d6
+	p15:gp16
+	d6
+  lo to 3 times l3
+  100u setnmr3^0 setnmr0^34^32^33 ctrlgrad 7
+  rcyc=2
+  100u setnmr3|0 setnmr0|34|32|33 ctrlgrad 0
+  p10:gp10
+  100u setnmr3^0 setnmr0^34^32^33 ctrlgrad 7
+# 1 "mc_line 123 file C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr exp. mc cmd. in line"
+  MCWRK  wr #0 if #0 zd id2 
+  lo to LBLF1 times td1
+  MCWRK rf #0
+  lo to LBLAV times tdav
+# 124 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+  d5
+exit
+# 128 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+ph1=0 
+ph2=1
+ph29=0
+ph30=0
+ph31=0
+
+
+;pl1 : f1 channel ? power level for pulse (default)
+;sp1: shaped pulse power level for selective detection
+;p1 : f1 channel ? 90 degree high power pulse
+;spnam1 : shaped pulse for selective detection
+;d1 : relaxation delay; 1-5 * T1
+;d11 : short delay
+;d12 : delay for spin echo adjusting
+;GPZ0 : strength for excitation gradient [0-100]
+;GPZ1 : strength for reversed excitation gradient GPZ1 = -GPZ0
+;GPZ2 : strength for acquisition gradient [0-100]
+;GPZ3 : strength for reversed acquisition gradient GPZ3 = -GPZ2
+;NS: 1
+;l3=number of loops for acquisition
+# 149 "C:/Bruker/TopSpin3.6.4/exp/stan/nmr/lists/pp/user/iufcosy-pr"
+;IMPORTANT: set d20 + d6 = DW x TD(F2)/(2xL3)
+
+;		AQ max = 100 ms
+;		d1 minimum = 5s if several scans or ds>0 or interleaving
+;		maximum 20 min of UF in a row, then leave 20 min rest before performing UF again
+;		check parameters before RGA!
+;$Id: zgselgs,v 1.1 2006/05/26 12:17:01 ber Exp $

@@ -1,0 +1,39 @@
+##TITLE= Audit trail, TopSpin 4.3.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= crremy
+$$ C:/Users/crremy/Desktop/230601884_liver_apolar/4/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-03-22 18:43:34.476 +0100>,<nmrsu>,<TLS-TOX-E20RMN>,<go4>,<TopSpin 3.6.4>,
+      <created by zg on data set with UUID '97831a6c-e871-11ee-aec7-5c60ba342e53'
+       started at 2024-03-22 18:28:26.730 +0100,
+       POWCHK enabled, PULCHK disabled,
+       completed at 2024-03-22 18:43:34.475 +0100
+
+       configuration hash MD5:
+       03 0E 97 30 20 F5 16 F7 19 55 A1 D6 78 87 77 63
+       data hash MD5: 128K * 8
+       08 52 57 CA 72 60 09 AC 82 3D 4B 36 20 2A B9 AD
+>)
+(   2,<2024-03-22 18:43:34.536 +0100>,<nmrsu>,<TLS-TOX-E20RMN>,<audit>,<TopSpin 3.6.4>,
+      <user comment:
+       ICON-NMR User ID: nmrsu
+       data hash MD5: 128K * 8
+       08 52 57 CA 72 60 09 AC 82 3D 4B 36 20 2A B9 AD>)
+(   3,<2024-06-10T21:02:03.534+0200>,<INRA\crremy>,<TLS-TOX-P20C12>,<proc2d>,<TopSpin 4.3.0>,
+      <Start of raw data processing
+       xfb F2: SI = 512 WDW = 2 GB = 0.5 LB = -40 FT_mod = 6 PKNL = 0 F1: SI = 1K WDW = 3 SSB = 0 FT_mod = 6 FCOR = 0.5 PH_mod = 2
+       data hash MD5: 512 * 1K
+       E1 53 68 58 4F C1 11 25 88 02 25 51 9B 59 E5 57>)
+(   4,<2024-06-10T21:02:05.980+0200>,<INRA\crremy>,<TLS-TOX-P20C12>,<proc2d>,<TopSpin 4.3.0>,
+      <abs1 F1: ABSG = 5 ABSF1 = 4.191224 ABSF2 = -5.822576
+       data hash MD5: 512 * 1K
+       12 21 2A 32 BE 60 15 AB 21 93 7F B3 5B 43 4B 63>)
+(   5,<2024-06-10T21:02:06.475+0200>,<INRA\crremy>,<TLS-TOX-P20C12>,<proc2d>,<TopSpin 4.3.0>,
+      <abs2 F2: ABSG = 3 ABSF1 = 7.208389 ABSF2 = 4.704923
+       data hash MD5: 512 * 1K
+       12 21 2A 32 BE 60 15 AB 21 93 7F B3 5B 43 4B 63>)
+##END=
+
+$$ hash MD5
+$$ D6 63 BF 8B E0 E0 2F 71 F5 2C BE 42 AA C8 62 80

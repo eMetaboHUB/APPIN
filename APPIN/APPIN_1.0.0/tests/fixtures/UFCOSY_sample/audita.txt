@@ -1,0 +1,26 @@
+##TITLE= Audit trail, TopSpin 3.6.4
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ D:/nmrdata/data/nmrsu/nmr/230601884_liver_apolar/4/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2024-03-22 18:43:34.476 +0100>,<nmrsu>,<TLS-TOX-E20RMN>,<go4>,<TopSpin 3.6.4>,
+      <created by zg on data set with UUID '97831a6c-e871-11ee-aec7-5c60ba342e53'
+       started at 2024-03-22 18:28:26.730 +0100,
+       POWCHK enabled, PULCHK disabled,
+       completed at 2024-03-22 18:43:34.475 +0100
+
+       configuration hash MD5:
+       03 0E 97 30 20 F5 16 F7 19 55 A1 D6 78 87 77 63
+       data hash MD5: 128K * 8
+       08 52 57 CA 72 60 09 AC 82 3D 4B 36 20 2A B9 AD
+>)
+(   2,<2024-03-22 18:43:34.536 +0100>,<nmrsu>,<TLS-TOX-E20RMN>,<audit>,<TopSpin 3.6.4>,
+      <user comment:
+       ICON-NMR User ID: nmrsu
+       data hash MD5: 128K * 8
+       08 52 57 CA 72 60 09 AC 82 3D 4B 36 20 2A B9 AD>)
+##END=
+
+$$ hash MD5
+$$ 8D 66 FE F6 5F E3 CB 83 15 1D 71 28 1B C6 31 3D

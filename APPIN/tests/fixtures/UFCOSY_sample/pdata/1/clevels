@@ -1,0 +1,27 @@
+##TITLE= Parameter file, TopSpin 3.6.4
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= nmrsu
+$$ 2024-03-22 17:00:10.726 +0100  nmrsu@TLS-TOX-E20RMN
+$$ C:/Bruker/TopSpin3.6.4/prog/curdir/changer/inmrchanger/Mar22-2024-1643-nmrsu/101/101.514/data/nmr/230601884_liver_apolar/4/pdata/1/clevels
+$$ process C:\Bruker\TopSpin3.6.4\prog\mod\xwish3.exe
+##$LEVELS= (0..255)
+-61222003.2 -34012224 -18895680 -10497600 -5832000 -3240000 -1800000 -1000000
+1000000 1800000 3240000 5832000 10497600 18895680 34012224 61222003.2 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+##$LEVSIGN= 3
+##$MAXLEV= 8
+##$METHOD= 0
+##$NEGBASE= -1000000
+##$NEGINCR= 1.8
+##$POSBASE= 1000000
+##$POSINCR= 1.8
+##END=
